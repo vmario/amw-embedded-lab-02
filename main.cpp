@@ -1,17 +1,7 @@
-/**
- * @file
- * @author Mariusz Chilmon <mariusz.chilmon@ctm.gdynia.pl>
- * @date 2023
- * 
- * Pętla główna.
- */
-
 #include "gpio.hpp"
 #include "heartBit.hpp"
 
 #include <avr/interrupt.h>
-
-#include <stdlib.h>
 
 /**
  * Inicjalizacja przerwań.
@@ -47,6 +37,4 @@ int main()
 	while (true) {
 		mainLoop();
 	}
-
-	return EXIT_SUCCESS;
 }

@@ -1,10 +1,12 @@
 ---
-title: "Instrukcja laboratorium systemów wbudowanych"
-subtitle: "Ćwiczenie 2: Przerwania GPIO"
+title: "Ćwiczenie 2: Przerwania GPIO"
+subtitle: "Instrukcja laboratorium"
+footer-left: "Instrukcja laboratorium"
 author: [Mariusz Chilmon <<mariusz.chilmon@ctm.gdynia.pl>>]
 lang: "pl"
 titlepage: yes
-titlepage-logo: "logo.jpg"
+titlepage-logo: "logo.png"
+logo-width: "70mm"
 colorlinks: yes
 header-includes: |
   \usepackage{awesomebox}

@@ -1,27 +1,19 @@
-/**
- * @file
- * @author Mariusz Chilmon <mariusz.chilmon@ctm.gdynia.pl>
- * @date 2023
- * 
- * Zarządzanie GPIO.
- */
-
 #pragma once
 
 /**
  * Numery pinów powiązane z LED-ami.
  */
 enum PIN_LED {
-	PIN_LED_HEART_BIT = 0,
-	PIN_LED_KEY = 1,
-	PIN_LED_TOGGLE = 2,
+	PIN_LED_HEART_BIT = 5, ///< Dioda rytmicznie mrugająca.
+	PIN_LED_KEY = 4, ///< Dioda reagująca wprost na przycisk.
+	PIN_LED_TOGGLE = 3, ///< Dioda przełączana przyciskiem.
 };
 
 /**
  * Numery pinów powiązane z przyciskami.
  */
 enum PIN_KEY {
-	PIN_KEY1 = 2,
+	PIN_KEY_A1 = 1, ///< Przycisk włączający diodę na PIN_LED_KEY.
 };
 
 /**
