@@ -1,5 +1,5 @@
 ---
-title: "Ćwiczenie 1: Odczyt i zapis GPIO"
+title: "Ćwiczenie 2: Przerwania GPIO"
 author: [Mariusz Chilmon <<mariusz.chilmon@ctm.gdynia.pl>>]
 lang: "pl"
 titlepage: no
