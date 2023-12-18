@@ -13,7 +13,7 @@ void interruptsInitialize()
 /**
  * Obsługa przerwania INT0.
  */
-ISR(INT0_vect)
+ISR(PCINT1_vect)
 {
 }
 
