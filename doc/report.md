@@ -118,17 +118,14 @@ label/.style={font=\bfseries, minimum height=7mm, minimum width=18mm},
 \node[label] [right=of b0] {SREG};
 \end{tikzpicture}
 
-Jaką komendą ustawisz bit w rejestrze statusu `SREG`?
+Jaką komendą ustawisz bit w rejestrze statusu `SREG`, a jaką go wyzerujesz?
 \vspace{1.5cm}
 
 ## Zadanie rozszerzone
 
-W jaki sposób odróżnić przerwania zgłoszone przez piny `PB1` i `PD5`?
+Zarówno pin `PB1`, jak i `PB2` obsługiwane są przez przerwanie `PCI0`. Jak odróżnić, który z pinów wywołał przerwanie?
 \vspace{1.5cm}
 
-W jaki sposób odróżnić przerwania zgłoszone przez piny `PB1` i `PB2`?
-\vspace{1.5cm}
-
-Kiedy nie da się odróżnić przerwań zgłoszonych przez piny `PB1` i `PB2`?
+Kiedy nie będziemy w stanie poprawnie ocenić źródła tego przerwania?
 \vspace{1.5cm}
 
