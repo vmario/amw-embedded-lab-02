@@ -97,7 +97,7 @@ clean:
 
 program: all
 	$(AVRDUDE) \
-		-p $(MCU) -c arduino -P /dev/ttyACM0 -b 115200 \
+		-p $(MCU) -c arduino -P \\\\.\\$(PORT) -b 115200 \
 		-U flash:w:$(TARGET).hex:i
 
 erase:
