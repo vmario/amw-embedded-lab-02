@@ -65,14 +65,14 @@ Zazwyczaj mikrokontrolery z rodziny ATmega posiadają kilka pinów obsługujący
 
 Zmodyfikuj pętlę główną i obsługę przerwania z zadania podstawowego tak, by po wciśnięciu przycisku była ustawiana zmienna, która zmieni w pętli głównej stan diody `D3` na przeciwny.
 
-\awesomebox[teal]{2pt}{\faCode}{teal}{Do zmiany stanu diody na przeciwny możesz użyć funkcji \lstinline{ledToogle(PIN_LED_TOGGLE)}.}
+\awesomebox[teal]{2pt}{\faCode}{teal}{Do zmiany stanu diody na przeciwny możesz użyć zdefiniowanej w pliku \lstinline{gpio.hpp} funkcji \lstinline{ledToggle(PIN_LED_TOGGLE)}.}
 
 \awesomebox[teal]{2pt}{\faCode}{teal}{Pamiętaj o kwalifikatorze typu \lstinline{volatile}.}
 
 ## Wymagania funkcjonalne
 
 1. Dioda `D1` miga bez zmian.
-1. Dioda `D2` reaguje natychmiast na wciśnięcia przycisku `A1`.
-1. Dioda `D3` zmienia stan na przeciwny z opóźnieniem, wynikającym z działania pętli głównej.
+1. Po wciśnięciu przycisku `A1` dioda `D2` reaguje natychmiast.
+1. Po wciśnięciu przycisku `A1` dioda `D3` zmienia stan na przeciwny z opóźnieniem, wynikającym z&nbsp;działania pętli głównej.
 
 \awesomebox[teal]{2pt}{\faCode}{teal}{W tym zadaniu wykorzystujemy przerwanie nie do tego, by zareagować natychmiast na zdarzenie, ale tylko do tego, by je zarejestrować i obsłużyć później w pętli głównej. W~ten sposób często obsługiwane są zdarzenia, które wymagają czasochłonnych operacji. Dzięki takiemu podejściu procesor nie utyka na dłuższy czas w obsłudze przerwania.}
