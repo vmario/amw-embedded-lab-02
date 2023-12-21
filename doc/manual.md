@@ -65,9 +65,9 @@ Zazwyczaj mikrokontrolery z rodziny ATmega posiadają kilka pinów obsługujący
 
 Zmodyfikuj pętlę główną i obsługę przerwania z zadania podstawowego tak, by po wciśnięciu przycisku była ustawiana zmienna, która zmieni w pętli głównej stan diody `D3` na przeciwny.
 
-\awesomebox[teal]{2pt}{\faCode}{teal}{Do zmiany stanu diody na przeciwny możesz użyć zdefiniowanej w pliku \lstinline{gpio.hpp} funkcji \lstinline{ledToggle(PIN_LED_TOGGLE)}.}
+\awesomebox[teal]{2pt}{\faCode}{teal}{Pamiętaj o kwalifikatorze typu \lstinline{volatile} dla zmiennej, którą będą się komunikować procedura obsługi przerwania i pętla główna.}
 
-\awesomebox[teal]{2pt}{\faCode}{teal}{Pamiętaj o kwalifikatorze typu \lstinline{volatile}.}
+\awesomebox[teal]{2pt}{\faCode}{teal}{Do zmiany stanu diody \lstinline{D3} (podłączonej do pinu \lstinline{PIN_LED_TOGGLE}) na przeciwny możesz użyć zdefiniowanej już funkcji \lstinline{ledToggle(PIN_LED_TOGGLE)}.}
 
 ## Wymagania funkcjonalne
 
